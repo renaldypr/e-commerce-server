@@ -85,6 +85,7 @@ module.exports = {
                 if (!err) {
                   res.status(200).json({
                     user: user[0].name,
+                    email: user[0].email,
                     token: token
                   })
                 } else {
